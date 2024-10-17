@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #eb7474, #e69f9f);
+    font-family: 'Arial', sans-serif;
+}
+
+.stopwatch-container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.display {
+    font-size: 4rem;
+    color: #333;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+button {
+    background: #eb7474;
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background: #e69f9f;
+}
+
+.lap-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.lap-list li {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #333;
+    transition: background 0.3s;
+}
+
+.lap-list li:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
